@@ -1,9 +1,9 @@
 # RG-RGG-proteins
-Data and code used for bioinformatical analysis of RG(G) proteins, presented in Figure 1 of the main text and Supplementary Figure 6. 
+Data and code used for bioinformatical analysis of RG(G) proteins, presented in Figure 1A and Figure 2A of the main text and Supplementary Figure 5. 
 
 ## Occurrence of RG and RGG repeats in the human IDR-ome
 
-In the Fig 1B repository, the find_rg_repeats.py is used to generate the occurrence_matrix_RG.txt and occurrence_matrix_RGG.txt files in the output repository. The script needs to be called from the Fig 1B directory as:
+In the Fig 1A and Fig 2B repository, the find_rg_repeats.py is used to generate the occurrence_matrix_RG.txt and occurrence_matrix_RGG.txt files in the output repository. The script needs to be called from the Fig 1A and Fig 2A directory as:
 ```
 find_rg_repeats.py /path/to/fasta/file motif
 ```
@@ -17,12 +17,12 @@ The data was further analyzed in Excel.
 
 ## Frequency of each amino acid in RG regions
 
-In the SuppFig 6, the RG_molecular_grammar.py is used to generate the X_composition.txt files in the output repository. The analysis was done on three .fasta files: 
+In the SuppFig 5, the RG_molecular_grammar.py is used to generate the X_composition.txt files in the output repository. The analysis was done on three .fasta files: 
 - UP000005640_9606_SPOTD_MIN_30AA.fasta  ~  human IDRome
 - stress_granules_seq.fasta  ~  sequences of proteins known to localize in stress granules (taken from [Youn et al. 2018, MolCell][https://pubmed.ncbi.nlm.nih.gov/29395067/])
 - TNPO1_binding_seq.fasta  ~  sequences of proteins know to bind to TNPO1 (taken from [Mackmull et al. 2017, MolSystBiol][https://pubmed.ncbi.nlm.nih.gov/29254951/] and [Kimura et al. 2018, eLife][https://elifesciences.org/articles/21184])
 
-The RG_molecular_grammar.py script needs to be called separtely for each .fasta file:
+The RG_molecular_grammar.py script needs to be called from the SuppFig 5 directory separtely for each .fasta file:
 ```
 RG_molecular_grammar.py /path/to/fasta/file
 ```
